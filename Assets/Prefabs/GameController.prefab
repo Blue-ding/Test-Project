@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6278661419307492055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6444651439628096194}
+  - component: {fileID: 1518682427879713456}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: GameController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6444651439628096194
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6278661419307492055}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1518682427879713456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6278661419307492055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32b2c309f304f5848ac8ed49a727344a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debug: 1
+  GameUI: {fileID: 0}
+  PauseUI: {fileID: 0}
+  LevelUpPanel: {fileID: 0}
+  EndUI: {fileID: 0}
+  score: 0
+  timer: 0
+  difficulty: 0
+  charDatas:
+  - {fileID: 11400000, guid: 1e200e1095b0acb4f82968898b4bce29, type: 2}
+  talents:
+  - {fileID: 7285183081514534063, guid: 684a352218968c54fba88da9a9b6580d, type: 3}
+  - {fileID: 8947239944646839270, guid: 6521bf0b03e6fee418c99d10afed5812, type: 3}
+  - {fileID: 1744237371918542616, guid: e418c164e24c23345b3e93bde3f2598a, type: 3}
+  - {fileID: 6639164355808046166, guid: ec40e1e74ed8ba349b8a2e6dd1b8f070, type: 3}
+  - {fileID: 102119031569163722, guid: eeb6bc57cae035a45a0ab232002e51bb, type: 3}
+  player: {fileID: 0}
+  exp: {fileID: 3936394743310211762, guid: a40fa4aa9cc992b41a52f20e903f6e6b, type: 3}
+  stillEnemies:
+  - {fileID: 3994117406161279959, guid: 3e1d2d37581a82c4c91889978d0fb93f, type: 3}
+  enemies:
+  - {fileID: 5577933941592617274, guid: baf23893677b7f74caa34402528e0aca, type: 3}
+  - {fileID: 6081712639390358618, guid: 0a1a5aa3059062e4ea4b438771c2fde7, type: 3}
+  - {fileID: 3906570948717071952, guid: 41cba58e9d340c24689871e7d2bfadba, type: 3}
+  defCursor: {fileID: 2800000, guid: 35994635e27928c44be728c7c3307503, type: 3}
+  aimCursor: {fileID: 2800000, guid: ad0d54d2ba609494596c29ab757c598d, type: 3}
+  defMat: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  FlashFX: {fileID: 2100000, guid: 8602dc1136692bb49aa4485b39804cc9, type: 2}
+  mus_main: {fileID: 8300000, guid: 588fa4dcd19c58546aa9140500c38d3a, type: 3}
+  mus_game: {fileID: 8300000, guid: 02239b797a2d77742be7be4b91fe86c5, type: 3}
+  au: {fileID: 0}
+  au_UIClick: {fileID: 8300000, guid: ae88a9d556e59bd4d880efc1636dfdb3, type: 3}
+  au_win: {fileID: 8300000, guid: 48be3b5dfc4ee5d4b803630a0f6ff22b, type: 3}
+  au_lose: {fileID: 8300000, guid: bb5eaa4431befc547af16a71dab33565, type: 3}
+  au_moveOnGrass:
+  - {fileID: 8300000, guid: 7cc8d9ffc74728c428b24e87fc4187a0, type: 3}
+  - {fileID: 8300000, guid: ff1e0a9a4cfa736479b3ae418236d8a7, type: 3}
+  - {fileID: 8300000, guid: 547d6aa715ac3df4a990daf2cd7e5b2e, type: 3}
+  au_gainExp: {fileID: 8300000, guid: 56eff66dad638ff42a413ff44bf5dc8a, type: 3}
+  au_levelUp: {fileID: 8300000, guid: f0b280ed04ba7414295b6a1bd0ec0617, type: 3}
+  au_getTalent: {fileID: 8300000, guid: 5a6187301b58a9043a4f6d037dbdbae9, type: 3}
+  au_beHit: {fileID: 8300000, guid: 9266573e8bd5f8146b3b3d5f6081a0b7, type: 3}
+  au_beHeal: {fileID: 8300000, guid: d4aeae3543d8d81479a89bab8638f148, type: 3}
+  au_explode: {fileID: 8300000, guid: dfeb0fe5c34569a48b724dac6fa94a0b, type: 3}
+  au_enemyBeHit:
+  - {fileID: 8300000, guid: 4c11306f8763547459e0163689f97c7a, type: 3}
+  - {fileID: 8300000, guid: bdea0532308b5244fbafd592867efcdb, type: 3}
+  - {fileID: 8300000, guid: 9d57a31438a22a14a902f5d8f09a8c49, type: 3}
+  - {fileID: 8300000, guid: 0f95ca2a04e733540abf78b37943ff67, type: 3}
+  - {fileID: 8300000, guid: ec0d3a1b78d9b0545a9180f14d9ddd8c, type: 3}
+  - {fileID: 8300000, guid: 93dfdf185ac3f814eb179e9b9a2f1973, type: 3}
+  au_enemyDead: {fileID: 8300000, guid: fa22bbbc4bd2ef84295bbf39a2f743bb, type: 3}
+  au_enemyExplode: {fileID: 8300000, guid: f2ec370bbd26444448f88aab16046858, type: 3}
+  au_skillReady: {fileID: 8300000, guid: 0b21f9d140c0d214088b004f33b98791, type: 3}
+  au_skillExhaust: {fileID: 8300000, guid: 33c3a91bb82cbe74181f4faf5651ba65, type: 3}
+  Fire: 323
+  Reload: 114
+  Skill1: 49
+  Skill2: 50
+  Skill3: 51
+  worldMousePos: {x: 0, y: 0, z: 0}
+  relaMouseDir: {x: 0, y: 0, z: 0}
+  relaMouseRot: {x: 0, y: 0, z: 0, w: 0}
+  timeTick: 0
